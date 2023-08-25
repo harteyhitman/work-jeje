@@ -1,0 +1,50 @@
+/* Reset some default styles for the example */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+}
+
+nav button {
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-items {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hide the navbar off the screen */
+    width: 250px;
+    height: 100%;
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    transition: left 0.3s ease; /* Add the transition effect */
+}
+
+#navbarModal ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbarModal li {
+    margin: 10px 0;
+}
+
+#navbarModal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Show the navbar when it's open */
+#navbarModal.open {
+    left: 0;
+}

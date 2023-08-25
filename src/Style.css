@@ -1,0 +1,1181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(-60deg) translate(-4px, 4px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  color: white;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(60deg) translate(-4px, -4px);
+}
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+.menu-items.open {
+  left: 0;
+}
+
+.menu-items {
+  background-color: #e29617;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 34.267px;
+  font-style: normal;
+  font-weight: 400;
+  width: 543px;
+  line-height: 130.4%; /* 97.66px */
+}
+
+.contact-and-social-media {
+  background-color: #e29617;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Karla";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 177.9%; /* 28.464px */
+  flex-shrink: 0;
+  width: 443px;
+  padding: 0px 100px;
+  text-align: start;
+  border: 1px solid white;
+}
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  right: 1250px;
+  width: 1300px;
+  height: 600px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../src/images/background photography.png");
+  transform: translateX(100vw);
+  transition: transform 1s;
+  justify-content: flex-end;
+}
+
+#Close-nav {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  position: relative;
+  top: -350px;
+  right: -100px;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.Navbar {
+  background: #000;
+  font-weight: bold;
+}
+
+#navbar-hambur {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  padding-top: 50px;
+}
+
+.text-images {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.text-workjeje {
+  color: #fff;
+  font-size: 20px;
+}
+
+.hamburger {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.hire-profs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.hire-profs p {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+  margin: 0px 140px;
+  position: relative;
+  top: -42px;
+  line-height: 25px;
+}
+
+.hire-profs-inside-text {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: 64px;
+  left: 355px;
+  padding: 5px;
+  z-index: 1;
+  background-color: #000;
+}
+
+.applestore {
+  margin: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-images {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.three-images img {
+  width: 400px;
+}
+
+#three-images-middle {
+  position: relative;
+  top: 60px;
+}
+
+#three-images-right {
+  position: relative;
+  top: -100px;
+}
+
+#three-images-left {
+  position: relative;
+  top: -100px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300px 0px 0px 0px;
+}
+
+.get-connected {
+  margin: 20px auto;
+}
+
+.link-text {
+  width: 90%;
+}
+
+.link-icon {
+  height: 60px;
+  align-items: center;
+}
+
+.link-text-btn {
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#work-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.one {
+  width: 230px;
+  height: 230.945px;
+  border-radius: 30px;
+}
+
+.two {
+  width: 230px;
+  height: 230.945px;
+  border-radius: 30px;
+}
+
+.three {
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1b7ca9 89.12%);
+}
+
+.four {
+  width: 200px;
+  border-radius: 30px;
+}
+
+.five {
+  width: 380px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.tw0-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.last-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gallery-text {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.gallery-text p {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+#gallery-Btn {
+  display: flex;
+  margin-left: 145px;
+  margin-bottom: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.painting-girl-container {
+  background-image: url("../src/images/painter girl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.painting-girl-overlay {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  right: -670px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.join-our-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4a31c;
+  padding-top: 60px;
+}
+
+.dark-lady-place-visited {
+  width: 600.031px;
+  height: 600.481px;
+  transform: rotate(-30.316deg);
+  position: relative;
+  bottom: -100px;
+  right: -180px;
+  z-index: 1;
+}
+
+.Dark-lady {
+  width: 450.381px;
+  height: 500.078px;
+  flex-shrink: 0;
+  position: relative;
+  right: 30px;
+  top: 100px;
+  z-index: 1;
+}
+
+.join-net-left {
+  width: 500.67px;
+  height: 170.112px;
+  flex-shrink: 0;
+  padding-left: 54px;
+  position: relative;
+  right: -70px;
+  top: -110px;
+}
+
+.professional {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 30px 0px;
+}
+
+.join-net-left h2 {
+  color: black;
+  font-size: 38px;
+  margin: 20px 0px;
+}
+
+.join-our-network {
+  display: flex;
+  width: 100%;
+}
+
+.join-net-right {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  position: relative;
+  right: 10px;
+}
+
+.network-text {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.9;
+  line-height: 30px;
+  color: #141414;
+  margin: 20px 0px;
+  text-decoration-color: #141414;
+}
+
+.button-btn-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 190px;
+  padding: 15px;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.button-btn-network a {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.9;
+  text-decoration-color: #fff;
+}
+
+.arrow-curve {
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+}
+
+.get-job-done {
+  background-color: #000;
+  color: #e29617;
+  position: relative;
+  z-index: 1;
+}
+
+.getjobdone-big-text {
+  color: #f4a31c;
+  font-size: 90px;
+  width: 800.807px;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+
+.collect-data {
+  display: flex;
+  gap: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+}
+
+#job-icons {
+  margin-bottom: 50px;
+}
+
+.jobs-big-text {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  font-family: tahoma, sans-serif, "Times New Roman", Times, serif;
+}
+
+.jobs-small-text {
+  font-size: 16px;
+  opacity: 0.9;
+  color: white;
+  font-family: tahoma, sans-serif, "Times New Roman", Times, serif;
+}
+
+.div-peru-wave {
+  padding: 100px 0px;
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  color: #f4a31c;
+  gap: 100px;
+}
+
+.staright-perui-cave {
+  width: 350px;
+}
+
+.perui-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.perui-text-big-text {
+  font-size: 80px;
+  width: 500.319px;
+  display: flex;
+  justify-content: center;
+}
+
+.perui-text-small-text {
+  color: #fff;
+  position: relative;
+  left: -85px;
+  margin: 10px 0px;
+}
+
+.perui-cave-btn {
+  gap: 20px;
+  margin: 30px;
+  display: flex;
+  position: relative;
+  left: -30px;
+}
+
+.multiple-city {
+  display: flex;
+  flex-direction: column;
+}
+
+.multiple-colors {
+  width: 100%;
+}
+
+.multiple-city-text {
+  display: flex;
+  font-size: 100px;
+  width: 761.206px;
+  font-weight: bold;
+  margin-left: 140px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  gap: 70px;
+  position: relative;
+  top: -350px;
+  right: -170px;
+}
+
+.cities img {
+  width: 100px;
+}
+
+.City-img {
+  background-image: url(../src/images/pen.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
+}
+
+.city-img-unit {
+  position: relative;
+  top: -80px;
+  right: -70px;
+  width: 30%;
+}
+
+.img-unit1 {
+  position: relative;
+  right: 30px;
+}
+
+.img-unit0 {
+  position: relative;
+  z-index: 1;
+}
+
+.get-the-app {
+  position: relative;
+  top: -500px;
+  right: -850px;
+  width: 30%;
+}
+
+.keep-your-opportunity-closer {
+  position: relative;
+  top: -490px;
+  right: -850px;
+  width: 30%;
+  color: #fff;
+}
+
+.navbar-hambur {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -500px;
+  right: -690px;
+  width: 30%;
+}
+
+.logo-and-work-jeje {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.workje-je {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.download-apple-text {
+  color: white;
+  font-size: 12px;
+  position: relative;
+  top: -35px;
+  right: -65px;
+}
+
+.download-apple {
+  position: relative;
+  top: -20px;
+  right: -5px;
+}
+
+.apple-store-text {
+  position: relative;
+  right: 20px;
+}
+
+.Apple-store-logo {
+  position: relative;
+  right: -40px;
+}
+
+.download-playstore-container {
+  position: relative;
+  right: -210px;
+  top: -95px;
+}
+
+.download-playstore {
+  position: relative;
+  top: -30px;
+  right: -5px;
+}
+
+.play-store-text {
+  position: relative;
+  right: 50px;
+  top: 5px;
+}
+
+.ready-to-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: white;
+  position: relative;
+  margin-top: -278px;
+  padding-top: 100px;
+}
+
+.ready-to-start-text {
+  width: 847.042px;
+  font-size: 90px;
+}
+
+.Black-btn {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  width: 847.042px;
+  margin: 30px 0px;
+}
+
+.footer-container {
+  background-color: #000;
+  color: white;
+}
+
+.first-footer-container {
+  display: flex;
+  gap: 150px;
+  width: 700px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.workjeje-footer {
+  line-height: 30px;
+  text-align: start;
+  padding-bottom: 150px;
+}
+
+.service-provider {
+  line-height: 40px;
+  text-align: start;
+}
+
+.service-provider p,
+.workjeje-footer p {
+  color: white;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.Logoimg {
+  position: relative;
+  right: -220px;
+  top: 65px;
+}
+
+.Social-media {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  position: relative;
+  right: -100px;
+  margin-bottom: 100px;
+}
+
+.social-media-img {
+  width: 139.214px;
+  height: 21.026px;
+  flex-shrink: 0;
+  margin-right: 70px;
+}
+
+.last-footer {
+  width: 1000.69px;
+  font-size: 11px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.colored-footer {
+  color: #f4a31c;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.right-reserved {
+  margin-top: 50px;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .app {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .hamburger-mobile {
+    display: flex;
+    color: white;
+  }
+  .navmobile {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .workjeje-logo-and-and-text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+  }
+  .hire-professional {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 0px;
+  }
+  .stars-mobile {
+    height: 13px;
+    align-self: center;
+  }
+  .workjeje-prof-icon {
+    margin: -2px 0px;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+  }
+  .professional-texts {
+    font-size: 30px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    line-height: 35px;
+    font-family: sans-serif;
+  }
+  .get-connected-to-verified {
+    text-align: center;
+    margin: 20px 20px;
+  }
+  .get-connected-to-verified p {
+    color: var(--white-wj, #fff);
+    text-align: center;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.4%;
+  }
+  .Mobile-Btn {
+    width: 100px;
+  }
+  .profs-btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .mobilephones {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+    gap: 40px;
+  }
+  .mobilephones img {
+    width: 300px;
+  }
+  .link-yellow-text {
+    background: linear-gradient(180deg, #f4a31c 0%, #5f3d06 99.99%, #fdc913 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .workGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    gap: 30px;
+  }
+  .background {
+    width: 310px;
+    border-radius: 10px;
+    background: url("../src/images/barber-mobile.png");
+  }
+  .with-assurance-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .with-assurance-text img {
+    width: 300px;
+    height: 100px;
+    margin: 30px 0px;
+  }
+  .paint-girl img {
+    width: 280px;
+  }
+  .paint-girl {
+    margin: 50px auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background: url("../src/images/paint-girl-mobile.png");
+    background-position: center;
+  }
+  .professional-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4A31C;
+    text-align: left;
+    padding: 50px 10px;
+    margin-top: -50px;
+  }
+  .professional-app h2 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .professional-app h4 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .sign-up-as-a-pro {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-weight: bold;
+    width: 150px;
+    padding: 8px;
+    margin: 20px 0px;
+  }
+  .sign-up-as-a-pro a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .smiling-lady-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4A31C;
+  }
+  .smile-mobile {
+    width: 150px;
+    height: 180px;
+    margin-right: -20px;
+  }
+  .the-mobile {
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes mymove {
+    from {
+      left: -10px;
+    }
+    to {
+      left: -40px;
+    }
+  }
+  .mobile-getjob-done {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .get-job-done {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .getjobdone-big-text {
+    color: #f4a31c;
+    font-size: 50px;
+    width: 300.807px;
+    padding: 40px 20px;
+    margin: 0;
+  }
+  .div-peru-wave {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: #f4a31c;
+    gap: 100px;
+  }
+  .staright-perui-cave {
+    width: 300px;
+  }
+  .perui-cave-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .collect-data {
+    display: flex;
+    width: 300px;
+    margin: 20px auto;
+    gap: 60px;
+    color: white;
+    line-height: 35px;
+  }
+  .jobs-big-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: tahoma, sans-serif, "Times New Roman", Times, serif;
+  }
+  #job-icons {
+    margin-bottom: 110px;
+  }
+  .perui-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .perui-text-big-text {
+    font-size: 2rem;
+    width: 300px;
+  }
+  .perui-text-small-text {
+    color: #fff;
+    position: relative;
+    left: 10px;
+  }
+  .availablecities-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+  }
+  .availablecities-mobile h1 {
+    color: var(--logo-black-wj, #000);
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 101.9%;
+  }
+  .availablecities-mobile p {
+    font-family: "Poppins";
+    font-size: 8.803px;
+    font-style: normal;
+    opacity: 0.6;
+    color: black;
+    line-height: 179.8%;
+  }
+  .availablecities-mobile img {
+    border-radius: 10px;
+    margin: 20px 12px;
+  }
+  .ready-to-start-hiring {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+  .ready-to-start {
+    margin: 30px 0px;
+  }
+  .work-jeje-footer-mobile {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 50px 0px;
+  }
+  .work-jeje-footer-mobile p {
+    font-size: 10px;
+  }
+  .workjeje-img-mobile {
+    width: 50px;
+    height: 50px;
+  }
+  .social-media-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 20px;
+  }
+  .modal-container {
+    display: flex;
+  }
+  .hamburger-mobile-new {
+    text-align: center;
+    max-width: 600px;
+  }
+  .navbar-mobile-new {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hamburger-mobile-new {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .line-mobile-new {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    color: white;
+    margin: 3px auto;
+  }
+  .modal-mobile-new {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/camera-context.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about-page {
+    color: white;
+    background: rgba(253, 186, 3, 0.6);
+    width: 100%;
+    padding: 175px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 32px;
+    align-items: start;
+    border-right: 1px solid white;
+    text-align: start;
+  }
+  .about-page a {
+    text-decoration: none;
+    color: white;
+  }
+  .about-page span {
+    font-size: 10px;
+    padding-right: 10px;
+    margin-left: 30px;
+  }
+  .reach-us {
+    color: white;
+    background-color: rgba(253, 186, 3, 0.6);
+    width: 70%;
+    font-size: 10px;
+    gap: 30px;
+    padding: 200px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
+  .close-mobile-new {
+    cursor: pointer;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+    top: -80px;
+    right: -50px;
+  }
+}/*# sourceMappingURL=Style.css.map */
