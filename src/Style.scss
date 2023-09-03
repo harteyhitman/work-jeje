@@ -1054,10 +1054,11 @@ line-height: 101.9%;
 
 .modal-mobile-new {
   position: fixed;
-  // top: 0;
-  // left: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
   z-index: 99;
-  // height: max-content;
+  height: max-content;
   background-color: white;
   color: #FFE7DA;
   display: flex;
