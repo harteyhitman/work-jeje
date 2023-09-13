@@ -111,7 +111,7 @@ body {
   height: 43px;
   flex-shrink: 0;
   position: relative;
-  top: -350px;
+  top: -300px;
   right: -100px;
   cursor: pointer;
 }
@@ -1035,6 +1035,7 @@ line-height: 101.9%;
 .navbar-mobile-new {
   display: flex;
   justify-content: flex-end;
+  outline: none;
 }
 
 .hamburger-mobile-new {
@@ -1042,6 +1043,8 @@ line-height: 101.9%;
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
+  cursor: pointer;
+  outline: none;
 }
 
 .line-mobile-new {
@@ -1107,6 +1110,17 @@ line-height: 101.9%;
   align-items: center;
 }
 .close-mobile-new {
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  position: relative;
+  top: -410px;
+  right: -110px;
+}
+}
+@media (max-width: 320px) {
+  .close-mobile-new {
   cursor: pointer;
   font-size: 10px;
   padding: 5px;
