@@ -10,16 +10,16 @@ const ReadyToStartHiringThroughUs = () => {
     <div className="ready-to-start-hiring">
       <h1>Ready to start hiring through us?</h1>
       <div className="profs-btn-mobile">
-        <img
+       <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"><img
           className="Mobile-Btn ready-to-start"
           src={AppleBtnMobile}
           alt=""
-        />
-        <img
+        /></a> 
+       <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje"><img
           className="Mobile-Btn ready-to-start"
           src={GoogleBtnMobile}
           alt=""
-        />
+        /></a> 
       </div>
       <div className="work-jeje-footer-mobile">
         <img className="workjeje-img-mobile" src={LogoiconWJ} alt="" />

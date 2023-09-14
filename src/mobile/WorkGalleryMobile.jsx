@@ -22,8 +22,8 @@ const WorkGalleryMobile = () => {
     <img  src={WithAssurance} alt="" />
     </div>
     <div className="profs-btn-mobile">
-    <img className="Mobile-Btn" src={BlackBtnApple} alt="" />
-    <img className="Mobile-Btn" src={BlackBtnGoogle} alt="" />
+    <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"><img className="Mobile-Btn" src={BlackBtnApple} alt="" /></a>
+    <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje"><img className="Mobile-Btn" src={BlackBtnGoogle} alt="" /></a>
   </div>
     </div>
   )

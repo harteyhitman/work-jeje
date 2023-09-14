@@ -31,8 +31,8 @@ const HireProfessional = () => {
         </p>
       </div>
       <div className="profs-btn-mobile">
-        <img className="Mobile-Btn" src={AppleBtnMobile} alt="" />
-        <img className="Mobile-Btn" src={GoogleBtnMobile} alt="" />
+      <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"><img className="Mobile-Btn" src={AppleBtnMobile} alt="" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje"><img className="Mobile-Btn" src={GoogleBtnMobile} alt="" /></a>
       </div>
       <div className="mobilephones">
       <img src={PeruMobile} alt="" />
@@ -44,8 +44,8 @@ const HireProfessional = () => {
       <h2>Get connected to verified and trusted service providers around you.</h2>
       </div>
       <div className="profs-btn-mobile">
-      <img className="Mobile-Btn" src={AppleBtnMobile} alt="" />
-      <img className="Mobile-Btn" src={GoogleBtnMobile} alt="" />
+      <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"><img className="Mobile-Btn" src={AppleBtnMobile} alt="" /></a>
+      <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje"><img className="Mobile-Btn" src={GoogleBtnMobile} alt="" /></a>
     </div>
     </div>
   );

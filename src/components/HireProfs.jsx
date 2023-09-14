@@ -23,7 +23,7 @@ const HireProfs = () => {
         Work jeje has it all.
       </p>
       <div className="button">
-        <Btn1
+        <Btn1 
           onClick={appleStoreClick}
           className="applestore"
           label="Get it on Google Play "

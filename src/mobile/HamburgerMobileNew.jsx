@@ -30,19 +30,19 @@ const HamburgerMobileNew = () => {
         <div className="modal-mobile-new">
           <div className="about-page">
             <div>
-              <span>01</span>About
+              <span>01</span><a href="/">About</a>
             </div>
             <div>
-              <span>02</span>Features
+              <span>02</span><a href="/">Features</a>
             </div>
             <div>
-              <span>03</span> FAQ
+              <span>03</span><a href="/">FAQ</a> 
             </div>
             <div>
-              <span>04</span>Contact Us{" "}
+              <span>04</span><a href="/">Contact Us</a>{" "}
             </div>
             <div>
-              <span>05</span>Get Started
+              <span>05</span><a href="/">Get Started</a>
             </div>
           </div>
 

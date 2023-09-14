@@ -14,8 +14,9 @@ const ReadyToStart = () => {
         </h1>
       </div>
       <div className="Black-btn">
-        <img src={AppleBlack} alt="" />
-        <img src={PlaystoreBlack} alt="" />
+        <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje">
+        <img src={AppleBlack} alt="" /></a>
+       <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"><img src={PlaystoreBlack} alt="" /></a> 
       </div>
 
       <div className="footer-container">

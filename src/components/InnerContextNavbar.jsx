@@ -9,11 +9,11 @@ const InnerContextNavbar = ({toggleMenu}) => {
     <div className="modal-container">
       <div className="menu-items">
         <ul>
-          <li>About</li>
-          <li>Features</li>
-          <li>FAQS</li>
-          <li>Contact Us</li>
-          <li>Get Started</li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Features</a></li>
+          <li><a href="/">FAQS</a></li>
+          <li><a href="/">Contact Us</a></li>
+          <li><a href="/">Get Started</a></li>
         </ul>
       </div>
       <div className="contact-and-social-media">

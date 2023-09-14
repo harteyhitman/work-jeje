@@ -31,8 +31,8 @@ const WorkGallery = () => {
         </p>
       </div>
       <div id="gallery-Btn">
-        <img className="applestore gallery-btn-img" src={BtnAppleWhite} alt="" />
-        <img className="applestore gallery-btn-img" src={BtnPlayWhite} alt="" />
+        <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje"><img className="applestore gallery-btn-img" src={BtnAppleWhite} alt="" /></a>
+       <a href="https://apps.apple.com/ng/app/workjeje/id1628757239"> <img className="applestore gallery-btn-img" src={BtnPlayWhite} alt="" /></a>
       </div>
     </div>
   );

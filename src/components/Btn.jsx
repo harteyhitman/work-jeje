@@ -3,8 +3,11 @@ import GooglePlay from '../images/play.png'
 
 function Btn(props) {
     return (
-      <button onClick={props.onClick} className={props.className}>
-        <img src={GooglePlay} alt="" />
+      <button onClick={props.onClick}
+       className={props.className}>
+      <a href="https://play.google.com/store/apps/details?id=com.stellaredge.workjeje">
+      <img src={GooglePlay} alt="" />
+</a>
       </button>
     );
   }
